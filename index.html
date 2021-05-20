@@ -16,25 +16,124 @@
         rel="stylesheet">
 
     <!-- Font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Owl carousel -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
     <!-- Libraries CSS Files -->
-
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/reponsive.css">
     <!-- Main Stylesheet File -->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="container">
+            <div class="navbar row">
+                <div class="col nav-left">
+                    <a href="index.html" class="homepage">
+                        <span>T.</span><span>N</span>
+                    </a>
+                </div>
+                <div class="col nav-right">
+                    <ul class="row">
+                        <li><a href="index.html" class="active">Trang Chủ</a></li>
+                        <li><a href="#about-us">Về Chúng Tôi</a></li>
+                        <li><a href="#service">Dịch Vụ</a></li>
+                        <li><a href="#portfolio">Hồ sơ năng lực</a></li>
+                        <li><a href="#teams">Nhóm</a></li>
+                        <li class="drop-down">
+                            <a href="javascript:;">Danh Mục<i class="fas fa-angle-down"></i></a>
+                            <ul>
+                                <li><a href="javascript:;">Danh Mục 1</a></li>
+                                <li><a href="javascript:;">Danh Mục 2</a></li>
+                                <li><a href="javascript:;">Danh Mục 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#contact-us">Liên Hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
+    <!-- Banner -->
+    <section class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col l-6 m-12 s-12 banner-content">
+                    <h1 class="title">Chúng tôi cung cấp các<span> giải pháp</span> cho doanh nghiệp của bạn!
+                    </h1>
+                    <div class="link-btn">
+                        <a href="javascript:;">Bắt đầu</a>
+                        <a href="javascript:;">Dịch vụ của chúng tôi</a>
+                    </div>
+                </div>
+                <div class="col l-6 m-12 s-12 banner-intro">
+                    <img src="./img/logo/intro-img.svg" alt="intro">
+                </div>
+            </div>
+        </div>
+    </section>
 
-
+    <!-- About Us -->
+    <section class="about-us" id="about-us">
+        <div class="container">
+            <div class="row">
+                <h1 class="sub-title">Về Chúng Tôi</h1>
+                <p class="sub-content">Với nhiều năm kinh nghiệm trong lĩnh vực đưa ra các giải pháp hiệu quả cho doanh
+                    nghiệp của bạn. Chúng tôi tin rằng sẽ giúp doanh nghiệp của bạn tiến xa hơn trong tương lai.</p>
+                <div class="col l-6 ml-6 m-6 sm-12 s-12">
+                    <p class="solution-title">Chúng tôi tự tin có thể giúp doanh nghiệp của bạn trong các lĩnh vực</p>
+                    <div>
+                        <div class="solution-category_items">
+                            <div class="icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="solution-category_items--content">
+                                <h2>Thương mại điện tử</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis error eius dolore
+                                    maiores impedit doloribus veniam doloremque, voluptas et, sint alias numquam a
+                                    fugiat consequatur. Voluptas consequatur tenetur nobis quo!</p>
+                            </div>
+                        </div>
+                        <div class="solution-category_items">
+                            <div class="icon">
+                                <i class="fas fa-pen-nib"></i>
+                            </div>
+                            <div class="solution-category_items--content">
+                                <h2>Thiết kế đồ hoạ</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolore vel, repellat
+                                    quo expedita facere voluptas natus perferendis consectetur sequi. In at deleniti,
+                                    tempora assumenda ratione ut asperiores fugit nostrum?</p>
+                            </div>
+                        </div>
+                        <div class="solution-category_items">
+                            <div class="icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="solution-category_items--content">
+                                <h2>Phân tích dữ liệu</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, impedit. Iusto beatae
+                                    iure temporibus, doloremque ut quis quia dolorum hic, nostrum quae, dignissimos
+                                    earum consequatur suscipit repellat aliquam at cum?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-6 ml-6 m-6 sm-12 s-12 solution-img">
+                    <img src="./img/logo/about-img.svg" alt="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- All plugins -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"

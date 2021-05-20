@@ -1,13 +1,14 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap);
+
 :root {
-    --primary-color: #4c6ef4;
-    --secondary-color: #ed4747;
+    --primary-color: #004289;
+    --secondary-color: #007bff;
+    --logo-color: #ed4747;
     --white-color: #fff;
     --shadow-color: #7f89a19a;
     --black-color: #000;
     --text-color: #222;
-    --background-color: #d1d6d7;
-    --services-section-color: #241e72;
-    --services-card-color: #3c80aabd;
+    --background-color: #004a99;
 }
 
 * {
