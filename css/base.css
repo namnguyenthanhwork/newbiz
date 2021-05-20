@@ -1,0 +1,40 @@
+:root {
+    --primary-color: #4c6ef4;
+    --secondary-color: #ed4747;
+    --white-color: #fff;
+    --shadow-color: #7f89a19a;
+    --black-color: #000;
+    --text-color: #222;
+    --background-color: #d1d6d7;
+    --services-section-color: #241e72;
+    --services-card-color: #3c80aabd;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.5;
+    scroll-behavior: smooth
+}
+
+body {
+    background: var(--white-color);
+    color: var(--text-color);
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    overflow-x: hidden
+}
+
+ul li {
+    list-style-type: none
+}
+
+a {
+    text-decoration: none;
+    text-transform: capitalize
+}
