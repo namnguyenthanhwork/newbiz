@@ -3,6 +3,42 @@ section {
     padding: 40px 0;
 }
 
+/* go back homepage btn styling */
+.scroll-up-btn {
+    position: fixed;
+    right: 30px;
+    bottom: 75px;
+    z-index: 99;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    cursor: pointer;
+    opacity: 0;
+    background: var(--secondary-color);
+    color: var(--white-color);
+    text-align: center;
+    font-size: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease
+}
+
+.scroll-up-btn.show {
+    bottom: 95px;
+    opacity: 1
+}
+
+.scroll-up-btn:hover {
+    box-shadow: 0 0 20px var(--shadow-color)
+}
+
 /* header styling */
 .header {
     position: fixed;
@@ -10,9 +46,25 @@ section {
     left: 0;
     right: 0;
     z-index: 999;
+    padding: 15px 0;
+    height: 75px;
+    background: var(--white-color);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    border-radius: 0 0 40px 40px;
+    -webkit-border-radius: 0 0 40px 40px;
+    -moz-border-radius: 0 0 40px 40px;
+    -ms-border-radius: 0 0 40px 40px;
+    -o-border-radius: 0 0 40px 40px;
+}
+
+.header.sticky {
     height: 64px;
     padding: 10px 0;
-    background: var(--white-color);
+    box-shadow: 0 0 30px var(--shadow-color);
 }
 
 .navbar.row {
