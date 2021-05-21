@@ -304,7 +304,7 @@ p.solution-title {
 
 /* services styling */
 .services {
-    background: var(--secondary-bg-color);
+    background: var(--services-color);
 }
 
 .services-items {
@@ -328,4 +328,78 @@ p.solution-title {
 
 .services-items:hover {
     top: -15px;
+}
+
+/* why choose us styling */
+.why-choose-us {
+    color: var(--white-color);
+    background: var(--primary-color);
+}
+
+.choose-us_card {
+    text-align: center;
+    background: var(--why-us-color);
+    border-color: var(--why-us-color);
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.choose-us_card i {
+    font-size: 40px;
+    padding: 10px 0;
+}
+
+.choose-us_card .sub-title {
+    padding: 5px 0;
+}
+
+.choose-us_card p {
+    text-align: justify;
+    padding: 5px 0;
+}
+
+.choose-us_card .read-more {
+    display: inline-block;
+    color: var(--white-color);
+    font-weight: bold;
+    position: relative;
+}
+
+.read-more::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    opacity: 0;
+    visibility: hidden;
+    background: rgba(255, 255, 255, 0.322);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.choose-us_card:hover .read-more::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.read-more:hover::after {
+    background: var(--white-color);
+}
+
+.choose-us_card:hover {
+    background: var(--why-us-color-hv);
 }

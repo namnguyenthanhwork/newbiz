@@ -9,7 +9,9 @@
     --black-color: #000;
     --text-color: #222;
     --background-color: #004a99;
-    --secondary-bg-color: #bbd5f1;
+    --services-color: #bbd5f1;
+    --why-us-color: #2e6bad;
+    --why-us-color-hv: #003b7a;
 }
 
 * {
