@@ -1,6 +1,6 @@
 /* general styling */
 section {
-    padding: 40px 0;
+    padding: 60px 0;
 }
 
 /* go back homepage btn styling */
@@ -160,7 +160,7 @@ a.active {
     width: 100%;
     position: relative;
     background-size: cover;
-    padding: 200px 0 120px 0;
+    padding: 200px 0;
 }
 
 .banner-content h1 {
@@ -217,8 +217,16 @@ a.active {
 }
 
 /* about us */
-h1.sub-title {
-    margin: 0 auto;
+.about-us .row:not(.row:first-child) {
+    margin-top: 40px;
+}
+
+.about-us .row {
+    align-items: center;
+}
+
+h1.headline {
+    text-align: center;
     padding: 10px 0 20px 0;
 }
 
@@ -231,7 +239,8 @@ p.solution-title {
     text-align: center;
 }
 
-.solution-category_items {
+.solution-category_items,
+.services-items {
     display: flex;
     align-items: center;
 }
@@ -256,17 +265,20 @@ p.solution-title {
     -o-transition: all 0.3s ease-in-out;
 }
 
-.solution-category_items:hover i {
+.solution-category_items:hover i,
+.services-items:hover i {
     color: var(--white-color);
     background: var(--secondary-color);
 }
 
-.solution-category_items--content {
+.solution-category_items--content,
+.services-items_content {
     margin-left: 20px;
     padding: 10px 0;
 }
 
-.solution-category_items--content h2 {
+.solution-category_items--content h2,
+.services-items_content h2 {
     padding: 5px 0;
     transition: color 0.3s ease;
     -webkit-transition: color 0.3s ease;
@@ -275,15 +287,45 @@ p.solution-title {
     -o-transition: color 0.3s ease;
 }
 
-.solution-category_items:hover h2 {
+.solution-category_items:hover h2,
+.services-items:hover h2 {
     color: var(--secondary-color);
 }
 
-.solution-category_items--content p {
+.solution-category_items--content p,
+.services-items_content p {
     text-align: justify;
 }
 
 .solution-img img {
     width: 100%;
     height: auto;
+}
+
+/* services styling */
+.services {
+    background: var(--secondary-bg-color);
+}
+
+.services-items {
+    height: 170px;
+    background: var(--white-color);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-top: 30px;
+    padding: 5px 15px;
+    position: relative;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.services-items:hover {
+    top: -15px;
 }
