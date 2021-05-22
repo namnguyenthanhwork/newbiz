@@ -1,9 +1,60 @@
-/* general styling */
+/* Prelaoder */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+}
+
+#preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #f2f2f2;
+    border-top: 6px solid #007bff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-preloader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/* -------- general styling ------*/
+
 section {
     padding: 60px 0;
 }
 
-/* go back homepage btn styling */
+/* ----- go back homepage btn styling -- */
 .scroll-up-btn {
     position: fixed;
     right: 30px;
@@ -94,7 +145,7 @@ section {
     position: relative;
 }
 
-.nav-right>ul>li>a {
+.nav-right ul li a {
     display: block;
     padding: 5px 15px;
     color: var(--primary-color);
@@ -109,12 +160,14 @@ section {
     color: var(--secondary-color);
 }
 
-a.active {
-    color: var(--secondary-color) !important;
+.nav-right ul li.active>a {
+    color: var(--secondary-color);
 }
 
-.nav-right i {
-    margin-left: 10px;
+.nav-right .drop-down>a::after {
+    content: "\f107";
+    font-family: FontAwesome;
+    padding-left: 10px;
 }
 
 .drop-down>ul {
@@ -152,6 +205,121 @@ a.active {
 .drop-down>ul>li>a:hover {
     color: var(--white-color);
     background: var(--secondary-color);
+}
+
+/* Mobile Navigation */
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow-y: auto;
+    left: -260px;
+    width: 260px;
+    padding-top: 18px;
+    background: rgba(19, 39, 57, 1);
+    transition: 0.4s;
+}
+
+.mobile-nav * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.mobile-nav a {
+    display: block;
+    position: relative;
+    color: var(--white-color);
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+.mobile-nav a:hover,
+.mobile-nav .active>a,
+.mobile-nav li:hover>a {
+    color: var(--secondary-color) !important;
+    text-decoration: none;
+    background: unset !important;
+}
+
+.mobile-nav .drop-down>a::after {
+    content: "\f078";
+    font-family: FontAwesome;
+    padding-left: 10px;
+    position: absolute;
+    right: 15px;
+}
+
+.mobile-nav .active.drop-down>a::after {
+    content: "\f077";
+}
+
+.mobile-nav .drop-down>a {
+    padding-right: 35px;
+}
+
+.mobile-nav .drop-down ul {
+    display: none;
+    overflow: hidden;
+    opacity: unset;
+    visibility: unset;
+    position: unset;
+    background: unset;
+    transition: unset;
+    -webkit-transition: unset;
+    -moz-transition: unset;
+    -ms-transition: unset;
+    -o-transition: unset;
+}
+
+.mobile-nav .drop-down li {
+    padding-left: 20px;
+}
+
+.mobile-nav-toggle {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9998;
+    border: 0;
+    background: none;
+    font-size: 24px;
+    transition: all 0.4s;
+    outline: none !important;
+    line-height: 1;
+    cursor: pointer;
+    text-align: right;
+}
+
+.mobile-nav-toggle i {
+    margin: 18px 18px 0 0;
+    color: var(--primary-color);
+}
+
+.mobile-nav-overly {
+    width: 100%;
+    height: 100%;
+    z-index: 9997;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(19, 39, 57, 0.8);
+    overflow: hidden;
+    display: none;
+}
+
+.mobile-nav-active {
+    overflow: hidden;
+}
+
+.mobile-nav-active .mobile-nav {
+    left: 0;
+}
+
+.mobile-nav-active .mobile-nav-toggle i {
+    color: var(--white-color);
 }
 
 /* banner styling */
@@ -402,4 +570,16 @@ p.solution-title {
 
 .choose-us_card:hover {
     background: var(--why-us-color-hv);
+}
+
+.choose-us_info span {
+    display: block;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    padding: 50px 0 10px;
+}
+
+.choose-us_info p {
+    text-align: center;
 }
