@@ -385,12 +385,9 @@ section {
 }
 
 /* about us */
-.about-us .row:not(.row:first-child) {
-    margin-top: 40px;
-}
-
 .about-us .row {
     align-items: center;
+    padding: 20px 0;
 }
 
 h1.headline {
@@ -442,6 +439,10 @@ p.solution-title {
 .solution-category_items--content,
 .services-items_content {
     margin-left: 20px;
+    padding: 10px 0;
+}
+
+h2.secondary-title {
     padding: 10px 0;
 }
 
@@ -504,12 +505,17 @@ p.solution-title {
     background: var(--primary-color);
 }
 
+.why-choose-us .row {
+    justify-content: center;
+}
+
 .choose-us_card {
     text-align: center;
     background: var(--why-us-color);
     border-color: var(--why-us-color);
     padding: 20px;
     border-radius: 20px;
+    margin-top: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
