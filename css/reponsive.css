@@ -28,8 +28,8 @@
 }
 
 @media (max-width: 991px) {
-    /* header */
 
+    /* header */
     .header.sticky {
         padding: 15px 0;
     }
