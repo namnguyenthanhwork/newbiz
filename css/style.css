@@ -244,16 +244,14 @@ section {
     background: unset !important;
 }
 
-.mobile-nav .drop-down>a::after {
-    content: "\f078";
-    font-family: FontAwesome;
+.mobile-nav .drop-down>a i {
     padding-left: 10px;
     position: absolute;
     right: 15px;
 }
 
-.mobile-nav .active.drop-down>a::after {
-    content: "\f077";
+.mobile-nav .active.drop-down>a i::before {
+    content: "\f106";
 }
 
 .mobile-nav .drop-down>a {

@@ -1,4 +1,5 @@
-$(document).ready(function () {
+$(window).ready(function () {
+
     // Preloader (if the #preloader div exists)
     $(window).on('load', function () {
         if ($('#preloader').length) {
@@ -39,6 +40,13 @@ $(document).ready(function () {
             }
         }
     });
+
+    // jQuery counterUp (used in Whu Us section)
+    $('.counter-up').counterUp({
+        delay: 10,
+        time: 2000
+    });
+
     // carousel
     // $(".carousel").owlCarousel({
     //     autoplay: !0,
@@ -60,4 +68,8 @@ $(document).ready(function () {
     //         }
     //     }
     // })
-})
+
+
+
+
+});
