@@ -23,6 +23,19 @@ $(window).ready(function () {
         $("html").css("scrollBehavior", "smooth"), $(".nav-right>ul>li").removeClass("active"), $(this).addClass("active")
     })
 
+    // Porfolio isotope and filter 
+    var portfolioIsotope = $('.portfolio-container').isotope({
+        itemSelector: '.portfolio-items'
+    });
+    $('#portfolio-flters li').on('click', function () {
+        $("#portfolio-flters li").removeClass('active');
+        $(this).addClass('active');
+
+        portfolioIsotope.isotope({
+            filter: $(this).data('filter')
+        });
+    });
+
     // Smooth scroll for the navigation and links with .scrollto classes
     $('.navbar a, .mobile-nav a').on('click', function () {
         $("html").css("scrollBehavior", "smooth");
@@ -40,6 +53,16 @@ $(window).ready(function () {
             }
         }
     });
+
+    // Initiate the wowjs animation library
+    wow = new WOW({
+        boxClass: 'wow', // default
+        animateClass: 'animated', // default
+        offset: 50, // default
+        mobile: true, // default
+        live: true // default
+    })
+    wow.init();
 
     // jQuery counterUp (used in Whu Us section)
     $('.counter-up').counterUp({
