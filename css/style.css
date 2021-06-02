@@ -637,7 +637,7 @@ h2.secondary-title {
     cursor: pointer;
 
     margin-right: 10px;
-    padding: 10px 20px;
+    padding: 10px 30px;
 
     border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -655,6 +655,12 @@ h2.secondary-title {
 .nav-portfolio li.active {
     background: var(--secondary-color);
     color: var(--white-color);
+}
+
+.portfolio-items {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
 }
 
 .portfolio-items img {
@@ -719,29 +725,6 @@ h2.secondary-title {
     opacity: 1;
 }
 
-.portfolio-items:nth-child(4) .portfolio-wrap {
-    top: -30%;
-}
-
-.portfolio-items:nth-child(5) .portfolio-wrap {
-    top: -53%;
-}
-
-.portfolio-items:nth-child(6) .portfolio-wrap {
-    top: 4%;
-}
-
-.portfolio-items:nth-child(7) .portfolio-wrap {
-    top: -60%;
-}
-
-.portfolio-items:nth-child(8) .portfolio-wrap {
-    top: -110%;
-}
-
-.portfolio-items:nth-child(9) .portfolio-wrap {
-    top: -115%;
-}
 
 .portfolio-info h4,
 .portfolio-info p {
@@ -778,4 +761,63 @@ h2.secondary-title {
 .portfolio-info i:hover {
     filter: brightness(1.3);
     -webkit-filter: brightness(1.3);
+}
+
+/* Testimonials */
+.testimonials {
+    background: var(--nav-portfolio);
+}
+
+.testimonials .row {
+    justify-content: center;
+}
+
+.testimonials-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonials-items_img {
+    width: 250px;
+    height: auto;
+
+    margin-right: 20px;
+}
+
+.testimonials-items_img img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.testimonials-items h4 {
+    color: var(--testi-info);
+    font-weight: normal;
+}
+
+
+.testimonials .owl-nav,
+.testimonials .owl-dots {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--logo-color);
+}
+
+.testimonials .owl-dot.active {
+    background-color: var(--secondary-color);
 }

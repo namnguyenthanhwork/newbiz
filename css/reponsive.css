@@ -105,37 +105,6 @@
         font-size: 17px;
     }
 
-    /* our portfolio */
-    .portfolio-items:nth-child(3) .portfolio-wrap {
-        top: 4%;
-    }
-
-    .portfolio-items:nth-child(4) .portfolio-wrap {
-        top: -19%;
-    }
-
-    .portfolio-items:nth-child(5) .portfolio-wrap {
-        top: -18%;
-        left: 105%;
-    }
-
-    .portfolio-items:nth-child(6) .portfolio-wrap {
-        top: 9%;
-        right: 105%;
-    }
-
-    .portfolio-items:nth-child(7) .portfolio-wrap {
-        top: -102%;
-    }
-
-    .portfolio-items:nth-child(8) .portfolio-wrap {
-        top: -31%;
-    }
-
-    .portfolio-items:nth-child(9) .portfolio-wrap {
-        top: -97%;
-    }
-
     /* why choose us */
 
 }
@@ -177,13 +146,15 @@
 @media (max-width:575px) {
 
     /* our portfolio */
-    .portfolio-items  .portfolio-wrap {
+    .nav-portfolio li {
+        padding: 10px;
+    }
+
+    .portfolio-items .portfolio-wrap {
         top: unset !important;
         right: unset !important;
         left: unset !important;
         margin-top: 20px;
     }
-
-
 
 }

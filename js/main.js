@@ -71,28 +71,15 @@ $(window).ready(function () {
     });
 
     // carousel
-    // $(".carousel").owlCarousel({
-    //     autoplay: !0,
-    //     autoplayTimeout: 3e3,
-    //     autoplaySpeed: 1500,
-    //     margin: 20,
-    //     loop: !0,
-    //     nav: !1,
-    //     dot: !0,
-    //     responsive: {
-    //         0: {
-    //             items: 1
-    //         },
-    //         600: {
-    //             items: 2
-    //         },
-    //         1024: {
-    //             items: 3
-    //         }
-    //     }
-    // })
-
-
-
-
+    $(".testimonials-carousel").owlCarousel({
+        autoplayTimeout: 3e3,
+        autoplaySpeed: 1500,
+        margin: 20,
+        loop: !0,
+        nav: !1,
+        autoplay: true,
+        dots: true,
+        loop: true,
+        items: 1
+    })
 });
