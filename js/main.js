@@ -7,6 +7,18 @@ $(window).ready(function () {
                 $(this).remove();
             });
         }
+        // Porfolio isotope and filter 
+        var portfolioIsotope = $('.portfolio-container').isotope({
+            itemSelector: '.portfolio-items'
+        });
+        $('#portfolio-flters li').on('click', function () {
+            $("#portfolio-flters li").removeClass('active');
+            $(this).addClass('active');
+
+            portfolioIsotope.isotope({
+                filter: $(this).data('filter')
+            });
+        });
     });
 
     // scroll back
@@ -22,19 +34,6 @@ $(window).ready(function () {
     $(".nav-right>ul>li a").click(function () {
         $("html").css("scrollBehavior", "smooth"), $(".nav-right>ul>li").removeClass("active"), $(this).addClass("active")
     })
-
-    // Porfolio isotope and filter 
-    var portfolioIsotope = $('.portfolio-container').isotope({
-        itemSelector: '.portfolio-items'
-    });
-    $('#portfolio-flters li').on('click', function () {
-        $("#portfolio-flters li").removeClass('active');
-        $(this).addClass('active');
-
-        portfolioIsotope.isotope({
-            filter: $(this).data('filter')
-        });
-    });
 
     // Smooth scroll for the navigation and links with .scrollto classes
     $('.navbar a, .mobile-nav a').on('click', function () {

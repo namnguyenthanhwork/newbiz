@@ -530,7 +530,7 @@
         <div class="container">
             <h1 class="headline">Nhận xét</h1>
             <div class="row">
-                <div class="col l-8 ml-8 m-8 sm-8 s-8">
+                <div class="col l-8 ml-8 m-8 sm-12 s-12">
                     <div class="owl-carousel testimonials-carousel wow fadeInUp">
 
                         <div class="testimonials-items">
@@ -598,6 +598,101 @@
         </div>
     </section>
 
+    <!-- Teams -->
+    <section id="teams" class="teams">
+        <div class="container">
+            <h1 class="headline">Nhóm</h1>
+            <div class="row">
+                <div class="col l-3 ml-3 m-4 sm-6 s-6 teams-items">
+                    <div class="teams-wrap">
+                        <img src="./img/team/team-1.jpg" alt="">
+                        <div class="teams-content">
+                            <h4>Walter White</h4>
+                            <span>Chief Executive Officer</span>
+                            <div class="social">
+                                <a href="javascript:;">
+                                    <i class="fab fa-twitter"></i></a>
+                                <a href="javascript:;">
+                                    <i class="fab fa-facebook"></i></a>
+                                <a href="javascript:;">
+                                    <i class="fab fa-google-plus"></i></a>
+                                <a href="javascript:;">
+                                    <i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l-3 ml-3 m-4 sm-6 s-6 teams-items">
+                    <div class="teams-wrap">
+                        <img src="./img/team/team-2.jpg" alt="">
+                        <div class="teams-content">
+                            <h4>Walter White</h4>
+                            <span>Chief Executive Officer</span>
+                            <div class="social">
+                                <a href="javascript:;">
+                                    <i class="fab fa-twitter"></i></a>
+                                <a href="javascript:;">
+                                    <i class="fab fa-facebook"></i></a>
+                                <a href="javascript:;">
+                                    <i class="fab fa-google-plus"></i></a>
+                                <a href="javascript:;">
+                                    <i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l-3 ml-3 m-4 sm-6 s-6 teams-items">
+                    <div class="teams-wrap">
+                        <img src="./img/team/team-3.jpg" alt="">
+                        <div class="teams-content">
+                            <h4>Walter White</h4>
+                            <span>Chief Executive Officer</span>
+                            <div class="social">
+                                <a href="javascript:;">
+                                    <i class="fab fa-twitter"></i></a>
+                                <a href="javascript:;">
+                                    <i class="fab fa-facebook"></i></a>
+                                <a href="javascript:;">
+                                    <i class="fab fa-google-plus"></i></a>
+                                <a href="javascript:;">
+                                    <i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l-3 ml-3 m-4 sm-6 s-6 teams-items">
+                    <div class="teams-wrap">
+                        <img src="./img/team/team-4.jpg" alt="">
+                        <div class="teams-content">
+                            <h4>Walter White</h4>
+                            <span>Chief Executive Officer</span>
+                            <div class="social">
+                                <a href="javascript:;">
+                                    <i class="fab fa-twitter"></i></a>
+                                <a href="javascript:;">
+                                    <i class="fab fa-facebook"></i></a>
+                                <a href="javascript:;">
+                                    <i class="fab fa-google-plus"></i></a>
+                                <a href="javascript:;">
+                                    <i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client -->
+    <section class="client">
+        <div class="container">
+            <h1 class="headline">Khách hàng</h1>
+            <div class="row"></div>
+        </div>
+    </section>
 
     <!-- All plugins -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -615,6 +710,31 @@
     <!-- Main JS -->
     <script src="js/main.js"></script>
     <script src="lib/mobile-nav/mobile-nav.js"></script>
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v10.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Your Chat plugin code -->
+    <div class="fb-customerchat" attribution="page_inbox" page_id="105825651245887">
+    </div>
 </body>
 
 </html>

@@ -141,6 +141,11 @@
         margin: 15px auto !important;
     }
 
+    /* testimonial */
+    .testimonials-items_img {
+        width: 120px;
+    }
+
 }
 
 @media (max-width:575px) {
@@ -157,4 +162,12 @@
         margin-top: 20px;
     }
 
+    /* teams */
+    .teams-content {
+        font-size: 12px;
+    }
+
+    .social i {
+        font-size: 16px;
+    }
 }
