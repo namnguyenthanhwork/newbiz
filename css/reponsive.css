@@ -146,6 +146,25 @@
         width: 120px;
     }
 
+    /* contact us */
+    .col.contact {
+        padding-left: unset;
+        text-align: center;
+    }
+
+    .contact-info {
+        margin: 20px 0 10px 0;
+    }
+
+    .contact-form .col:first-child input {
+        width: 100%;
+    }
+
+    /* footer */
+    .footer {
+        text-align: center;
+    }
+
 }
 
 @media (max-width:575px) {
